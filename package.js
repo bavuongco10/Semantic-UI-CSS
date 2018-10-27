@@ -3,7 +3,7 @@ var
 ;
 
 Package.describe({
-  name    : 'semantic:ui-css',
+    name    : 'bavuongco10:semantic-ui-css',
   summary : 'Semantic UI - CSS Release of Semantic UI',
   version : '2.4.1',
   git     : 'git://github.com/Semantic-Org/Semantic-UI-CSS.git',
@@ -16,6 +16,12 @@ Package.onUse(function(api) {
   api.use('jquery', 'client');
 
   api.addFiles([
+    // release
+    'semantic.css',
+    'semantic.js'
+  ], 'client');
+
+  api.addAssets([
     // icons
     'themes/default/assets/fonts/icons.eot',
     'themes/default/assets/fonts/icons.svg',
@@ -25,10 +31,5 @@ Package.onUse(function(api) {
 
     // flags
     'themes/default/assets/images/flags.png',
-
-    // release
-    'semantic.css',
-    'semantic.js'
   ], 'client');
-
 });
